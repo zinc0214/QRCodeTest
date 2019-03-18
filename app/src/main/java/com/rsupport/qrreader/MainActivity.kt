@@ -3,6 +3,7 @@ package com.rsupport.qrreader
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.rsupport.qrreader.ayhan.view.AyhanActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -17,6 +18,10 @@ class MainActivity : AppCompatActivity() {
 
         QRGeneratorBtn.setOnClickListener {
             startActivity(Intent(this, QRGenActivity::class.java))
+        }
+
+        ayhanView.setOnClickListener {
+            startActivity(Intent(this, AyhanActivity::class.java))
         }
 
     }

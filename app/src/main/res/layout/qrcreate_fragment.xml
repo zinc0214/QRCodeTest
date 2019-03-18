@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <EditText
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/manage_num_editer"
+                android:hint="관리번호 입력"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:layout_marginTop="20dp"
+                android:text="QRCode 생성"
+                android:layout_toEndOf="@+id/manage_num_editer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/qr_code_create_btn"/>
+
+        <ImageView
+                android:layout_centerInParent="true"
+                android:background="@color/colorPrimary"
+                android:id="@+id/qr_img"
+                android:layout_width="250dp"
+                android:layout_height="250dp"/>
+    </RelativeLayout>
+</layout>
